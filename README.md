@@ -6,8 +6,8 @@ Streaming line wraps
 # with ollama
 curl -s --show-error --no-buffer http://localhost:11434/api/generate \
     -d '{"model": $model, "prompt": $prompt}' \
-	| jq --raw-output0 --unbuffered '.response' \
-	| RAPWIDTH=80 ./rap
+    | jq --raw-output0 --unbuffered '.response' \
+    | RAPWIDTH=80 ./rap
 ```
 
 ## Why
